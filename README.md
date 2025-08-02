@@ -11,22 +11,22 @@ This is a full-stack **MERN** (MongoDB, Express.js, React, Node.js) todo applica
 
 ## 📸 Page Views
 
-#### Register
+### Register
 
 Users can create a new account on the register page.
 ![register page](./screenshots/register_page.png)
 
-#### Login
+### Login
 
 Existing users can log in to access their todos and profile on the login page.
 ![login page](./screenshots/login_page.png)
 
-#### Profile
+### Profile
 
 Once logged in, users can view their profile information on the profile page.
 ![profile page](./screenshots/profile_page.png)
 
-#### Home
+### Home
 
 The home page displays the user's personal list of todo tasks. This page is protected and requires login.
 ![home page](./screenshots/home_page.png)
@@ -35,7 +35,7 @@ The home page displays the user's personal list of todo tasks. This page is prot
 
 This application exposes a RESTful API with two main categories of endpoints: Auth and User. All successful responses return a 200 OK status code unless otherwise noted.
 
-#### Auth Routes
+### Auth Routes
 
 These endpoints handle user authentication, including registration, login, and logout.
 
@@ -105,7 +105,7 @@ These endpoints handle user authentication, including registration, login, and l
 }
 ```
 
-#### User Routes
+### User Routes
 
 These endpoints are for managing user-specific data. All routes in this section are protected and require a valid JWT in the Authorization header (Bearer <token>).
 
@@ -258,6 +258,7 @@ To get the project running on your local machine, follow these steps.
 
 - **Node.js**
 - **MongoDB** (local or cloud instance)
+- **Git**
 
 ### Installation
 
@@ -281,7 +282,7 @@ To get the project running on your local machine, follow these steps.
     NODE_ENV=development
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_jwt_secret
-    APP_ORIGIN=http://localhost:5173
+    APP_ORIGIN=http://localhost:5173 # frontend url
     PORT=your_backend_port # defaults to 3001
     ```
 
