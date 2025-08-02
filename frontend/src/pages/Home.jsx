@@ -16,6 +16,7 @@ const Home = () => {
       queryClient.setQueryData([TASK], (oldData) => {
         oldData.tasks.push(newTask.task);
       });
+      setTitle("");
     },
   });
 
